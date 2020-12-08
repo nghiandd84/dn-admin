@@ -1,0 +1,20 @@
+server:
+  port: ${PORT:5003}
+
+spring:
+  application:
+    name: admin-service
+  boot:
+    admin:
+      discovery:
+        ignored-services: gateway-service
+
+eureka:
+  client:
+    registryFetchIntervalSeconds: 5
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://user:password@localhost:5000}/eureka/
+  instance:
+    hostname: ${DOMAIN_NAME:localhost}
