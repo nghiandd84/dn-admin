@@ -18,3 +18,4 @@ eureka:
       defaultZone: ${EUREKA_URL:http://user:password@localhost:5000}/eureka/
   instance:
     hostname: ${DOMAIN_NAME:localhost}
+    nonSecurePort: ${PORT_NON_SECURE:5003}
