@@ -3,11 +3,11 @@ server:
 
 spring:
   application:
-    name: admin-service
+    name: ADMIN-SERVICE
   boot:
     admin:
       discovery:
-        ignored-services: gateway-service
+        ignored-services: GATEWAY-SERVICE
 
 eureka:
   client:
